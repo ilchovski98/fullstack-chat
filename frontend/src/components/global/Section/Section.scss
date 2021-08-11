@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+  section
+\* ------------------------------------------------------------ */
+
+.section {
+  padding: 50px 15px;
+
+  .section__inner {
+    padding: 0 15px;
+    max-width: 1350px;
+    margin: auto;
+  }
+
+  &--medium .section__inner {
+    max-width: 600px;
+  }
+
+  &--small .section__inner {
+    max-width: 430px;
+  }
+}

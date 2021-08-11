@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+  Header
+\* ------------------------------------------------------------ */
+
+.header {
+  padding: 15px 30px;
+  background-color: #0476D0;
+
+  .header__inner {
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    padding-right: 15px;
+    
+    img {
+      width: 100%;
+      max-width: 60px;
+    }
+  }
+}

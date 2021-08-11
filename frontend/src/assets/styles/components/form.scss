@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+  form
+\* ------------------------------------------------------------ */
+
+.form {
+  padding: 20px;
+  text-align: center;
+
+  .form__label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .form__input {
+    font-size: 15px;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #282c34;
+  }
+
+  .form__row  {
+    margin-bottom: 15px;
+  }
+
+  .form__actions {
+    margin-top: 30px;
+  }
+
+  .form__title {
+    margin-bottom: 15px;
+  }
+}
+
+.section-form {
+  padding: 50px 15px;
+  max-width: 500px;
+  margin: auto;
+}
