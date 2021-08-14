@@ -16,8 +16,6 @@ function Login({LoginFunc, error}) {
                   <h2 className="form__title">Login</h2>
               </div>
 
-              {/*Error*/}
-
               <div className="form__body">
                   <div className="form__row">
                     <label htmlFor="login-name" className="form__label">Name</label>
@@ -37,6 +35,8 @@ function Login({LoginFunc, error}) {
                       <input type="password" id="login-password" className="form__input" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} />
                   </div>
               </div>
+
+              {(error !== '') ? (<div className="error">{error}</div>) : ''}
 
               <div className="form__actions">
                   <button type="submit" className="btn">Login</button>

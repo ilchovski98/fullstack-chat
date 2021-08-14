@@ -21,16 +21,23 @@ function App() {
     
     if (details.email === adminUser.email && details.password === adminUser.password) {
       console.log('Logged in');
-      setUser({name: details.name, email: details.email});
+      setUser({
+        name: details.name,
+        email: details.email
+      });
+
       return;
     }
 
-    console.log('Credentials doesnt match!');
+    setError('Credentials doesnt match!')
   }
 
   const LogoutFunc = () => {
     console.log('logout');
-    setUser({name: '', email: ''});
+    setUser({
+      name: '', 
+      email: ''
+    });
   }
 
   return (
