@@ -16,14 +16,21 @@ function App() {
   const [user, setUser] = useState({name: '', email: ''});
   const [error, setError] = useState('');
 
-  const Login = details => {
+  const LoginFunc = details => {
     console.log(details);
-    return '';
+    
+    if (details.email === adminUser.email && details.password === adminUser.password) {
+      console.log('Logged in');
+      setUser({name: details.name, email: details.email});
+      return;
+    }
+
+    console.log('Credentials doesnt match!');
   }
 
-  const Logout = () => {
+  const LogoutFunc = () => {
     console.log('logout');
-    return '';
+    setUser({name: '', email: ''});
   }
 
   return (
@@ -34,11 +41,11 @@ function App() {
           {(user.email !== '') ? (
             <div className="welcome">
               <h2>Welcome, <span>{user.name}</span></h2>
-              <button>Logout</button>
+              <button onClick={LogoutFunc}>Logout</button>
             </div>
           ) : (
             <Section className="section--small">
-              <Login Login={Login} error={error} />
+              <Login LoginFunc={LoginFunc} error={error} />
             </Section>
           )}
         </Route>
