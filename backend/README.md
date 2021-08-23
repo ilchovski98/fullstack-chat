@@ -44,3 +44,6 @@ DELETE FROM users WHERE user_id=2;
 ## Start / Stop Postgresql
 brew services start postgresql
 brew services stop postgresql
+
+## Terminate all node processes (sometimes it bugs)
+killall node

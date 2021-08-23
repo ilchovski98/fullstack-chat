@@ -33,7 +33,7 @@ function Login({LoginFunc, error}) {
                       <label htmlFor="login-first-name" className="form__label">Password</label>
 
                       <input type="password" id="login-password" className="form__input" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} />
-                  </div>
+                  </div >
               </div>
 
               {(error !== '') ? (<div className="error">{error}</div>) : ''}
