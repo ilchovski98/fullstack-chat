@@ -10,6 +10,7 @@ const pool = new Pool({
 })
 
 console.log(process.env);
+console.log(process.env);
 console.log(process.env.DATABASE_NAME);
 
 module.exports = pool;
